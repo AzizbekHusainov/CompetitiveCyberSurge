@@ -88,6 +88,10 @@ ICANN oversees:
 
 Does NOT resolve DNS queries directly.
 
+ICANN is another web browser based tool. You can utilize it to obtain public registration data regarding domains.
+
+Link: https://lookup.icann.org/en
+
 ---
 
 ## 8. NCL Exam Tips
