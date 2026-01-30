@@ -23,6 +23,7 @@ DNS lookups resolve domain names to records.
 
 ### Example
 dig example.com A
+
 Form: dig <domain> <record_type>
 
 ---
