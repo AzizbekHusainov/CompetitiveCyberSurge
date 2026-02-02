@@ -5,9 +5,9 @@ A set of rules computers follow to communicate.
 
 In competition, the protocol tells you how to interact with a service.
 
-\-            **HTTP/HTTPS** — web apps and APIs
+\- **HTTP/HTTPS** — web apps and APIs
 
-\-            **FTP** — file transfers (upload/download)
+\- **FTP** — file transfers (upload/download)
 
  
 
@@ -101,7 +101,7 @@ GET means “give me something.” It requests data and should not change server
 
 **Example:**
 
-GET /profile?id=3
+`GET /profile?id=3`
 
 Why GET matters in competition:
 
@@ -123,9 +123,9 @@ What to try when you see GET:
 
 **curl examples (GET):**
 
-curl http://site.com/profile?id=1
+`curl http://site.com/profile?id=1`
 
-curl \-H "Authorization: Bearer token123" http://site.com/profile?id=1
+`curl \-H "Authorization: Bearer token123" http://site.com/profile?id=1`
 
  
 
