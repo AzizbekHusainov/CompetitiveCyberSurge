@@ -1,0 +1,31 @@
+/root/.gnupg/pubring.kbx
+------------------------
+pub   rsa4096 2026-01-28 [SC]
+      9ED0153A492603859B0FFD019054DC25FE687A31
+uid           [ultimate] Rasheed Abbasov <abbasov.6@wright.edu>
+sub   rsa4096 2026-01-28 [E]
+
+pub   rsa4096 2026-01-28 [SC]
+      0B1D46A72839179EC4BD8C8C42D2DFBD180346DF
+uid           [  full  ] Azizbek Husainov <husainov.3@wright.edu>
+sub   rsa4096 2026-01-28 [E]
+
+pub   rsa4096 2026-01-25 [SC]
+      A7FCB0771BE38A82CC94589B55E8A45CE85C69D1
+uid           [  full  ] Jada Keeble (public key) <keeble.6@wright.edu>
+sub   rsa4096 2026-01-25 [E]
+
+pub   rsa4096 2026-01-27 [SC]
+      C4675F5F9252F22C8CA003A64B455018768C7319
+uid           [  full  ] Bryce Gephart <gephart.11@wright.edu>
+sub   rsa4096 2026-01-27 [E]
+
+pub   rsa3072 2026-01-28 [SC]
+      5E859C96CB33C1A4D06D5F51AA5C610D90B5EA45
+uid           [  full  ] Arantza Rivera (gpg key for class) <rivera.57@wright.edu>
+sub   rsa3072 2026-01-28 [E]
+
+pub   rsa4096 2026-01-28 [SC]
+      1E822BEC8FDA0CCA2D391EC2E075138993CDAA51
+uid           [  full  ] Aaron Lykins <lykins.42@wright.edu>
+sub   rsa4096 2026-01-28 [E]
