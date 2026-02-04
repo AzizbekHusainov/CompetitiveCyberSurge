@@ -1,0 +1,49 @@
+PS C:\Users\JadaK> gpg --list-sigs
+[keyboxd]
+---------
+pub   rsa4096 2026-01-28 [SC]
+      1E822BEC8FDA0CCA2D391EC2E075138993CDAA51
+uid           [  full  ] Aaron Lykins <lykins.42@wright.edu>
+sig 3        E075138993CDAA51 2026-01-28  [self-signature]
+sig          1866E098AD9E2167 2026-02-02  Jada Keeble <keeble.6@wright.edu>
+sub   rsa4096 2026-01-28 [E]
+      2EB89310B6824B9C7DB9B90729BF55DF4E2450F4
+sig          E075138993CDAA51 2026-01-28  [self-signature]
+
+pub   ed25519 2026-01-28 [SC] [expires: 2029-01-28]
+      1F9AD7486107A8D118BB00831866E098AD9E2167
+uid           [ultimate] Jada Keeble <keeble.6@wright.edu>
+sig 3    N   1866E098AD9E2167 2026-01-28  [self-signature]
+sub   cv25519 2026-01-28 [E] [expires: 2029-01-28]
+      E3EA7FED84C018DBE6F5E084017B047FCB6EC857
+sig      N   1866E098AD9E2167 2026-01-28  [self-signature]
+
+pub   rsa4096 2026-01-31 [SC]
+      53BAE2B20374788590826D2DA590235234E38A7F
+uid           [  full  ] Lindsey Adams <adams.382@wright.edu>
+sig 3        A590235234E38A7F 2026-01-31  [self-signature]
+sig          1866E098AD9E2167 2026-02-02  Jada Keeble <keeble.6@wright.edu>
+sub   rsa4096 2026-01-31 [E]
+      66DAE90B29720BD6F1836C48AF443550ED34A455
+sig          A590235234E38A7F 2026-01-31  [self-signature]
+
+pub   rsa3072 2026-01-28 [SC]
+      5E859C96CB33C1A4D06D5F51AA5C610D90B5EA45
+uid           [  full  ] Arantza Rivera (gpg key for class) <rivera.57@wright.edu>
+sig 3        AA5C610D90B5EA45 2026-01-28  [self-signature]
+sig          1866E098AD9E2167 2026-02-02  Jada Keeble <keeble.6@wright.edu>
+sub   rsa3072 2026-01-28 [E]
+      5B1B2DBA9672FF9C01264240576A28247D5D85F3
+sig          AA5C610D90B5EA45 2026-01-28  [self-signature]
+
+pub   rsa4096 2026-01-27 [SC]
+      C4675F5F9252F22C8CA003A64B455018768C7319
+uid           [  full  ] Bryce Gephart <gephart.11@wright.edu>
+sig 3        4B455018768C7319 2026-01-27  [self-signature]
+sig          1866E098AD9E2167 2026-02-02  Jada Keeble <keeble.6@wright.edu>
+sub   rsa4096 2026-01-27 [E]
+      81AE4B69DA789BCB326BBD0205C0C7DAFB838B11
+sig          4B455018768C7319 2026-01-27  [self-signature]
+
+pub   rsa4096 2021-09-08 [SC]
+      E47763416159625F60ACE88A7E5CF54E1BBA3984
