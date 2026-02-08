@@ -55,5 +55,5 @@ Goal of this challenge was to recognize that even though we can delete data on s
   - sudo strings /dev/loop0 | grep LINDSEY_USB_TEST
 
 
-## **AI Assistance Disclosure:**
+### **AI Assistance Disclosure:**
 Portions of the workflow explanations and Linux command usage were clarified with the help of ChatGPT (OpenAI) as a learning aid. All commands were executed and verified independently by the student.
