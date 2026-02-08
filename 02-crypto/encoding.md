@@ -3,6 +3,7 @@
 Rapid Tables (Hex to String | Hex to ASCII Converter) is a quicker method for decoding into ASCII than by hand. Simply input the form of the code you are going to decode to the format you wish to see. Then paste the code or file where directed and clarify which character encoding option you want, then convert. Base64 Decode and Encode - Online is quite similar in the way it’s straightforward.
 
 **Questions:**
+
 Q1: 0x73636f7270696f6e
 This text is encoded in hexadecimal. This text can be converted to ASCII by hand or by using an online tool such as RapidTables or CyberChef.
 💡
@@ -43,7 +44,7 @@ Using the strings command, I was able to extract the hidden flag (SKY-TVJI-2063)
 
 #### Encoding and Decoding side challenge on linux only system:
 Goal of this challenge was to recognize that even though we can delete data on storage device, it can still exist until overwritten. Deleting a file removes its filesystem reference, but the underlying data may remain on disk until overwritten, which allows forensic tools like strings to recover readable data from raw devices.
--Main commands used (no one on team had linux system and USB passthrough was unavailable in VM so I “created” a USB):
+- Main commands used (no one on team had linux system and USB passthrough was unavailable in VM so I “created” a USB):
   - sudo mkfs.ext4 /dev/loop0
   - sudo mount /dev/loop0 /mnt/fakeusb
   - echo "LINDSEY_USB_TEST" | sudo tee /mnt/fakeusb/secret.txt
