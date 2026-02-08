@@ -15,17 +15,17 @@ This text is encoded in base64. You can identify this by analyzing the range of 
 
 
 *A: scribble*
--To decode base64 → in terminal simply decode by using command:
-  echo c2NyaWJibGU= | base64 -d
-  Scribble is the output.
+- To decode base64 → in terminal simply decode by using command:
+  - echo c2NyaWJibGU= | base64 -d
+  - Scribble is the output.
 
 **Q3: 01110011 01100101 01100011 01110101 01110010 01100101 01101100 01111001**
 This text is encoded in binary. You can identify this by analyzing the range of characters used in the message and recognizing that it falls within the range for binary (0 and 1). This text can be converted to ASCII by hand or by using an online tool such as Binary Hex Converter or CyberChef.
-*A: securely* 
 
--In kali, command to get securely decoded:
-  echo "01110011 01100101 01100011 01110101 01110010 01100101 01101100 01111001" | \
-  while read -r b; do printf "\\$(printf '%03o' $((2#$b)))"; done
+*A: securely* 
+- In kali, command to get securely decoded:
+  - echo "01110011 01100101 01100011 01110101 01110010 01100101 01101100 01111001" | \
+  - while read -r b; do printf "\\$(printf '%03o' $((2#$b)))"; done
 
 **Q4: 01100010 01000111 00111001 01110011 01100010 01000111 01101100 01110111 01100010 00110011 01000001 00111101**
 This text is doubly encoded - first with base64 and then with binary. To revere the process, the message has to be converted from binary to ASCII, then base64 to ASCII. You can use the Binary Hex Converter followed by Base64Decode. It’s possible to combine these two steps using CyberChef.
@@ -36,20 +36,20 @@ This text is doubly encoded - first with base64 and then with binary. To revere 
 ### Strings Gym 
 *A: FLAG = SKY-TVJI-2063*
 Using the strings command, I was able to extract the hidden flag (SKY-TVJI-2063) from steg1.jpg and verify it by viewing the image in hexadecimal using xxd (the same method used in Vim with :%!xxd) and searching the hex dump for the ASCII string.
--Commands:
-  strings steg1.jpg | grep SKY
-  xxd steg1.jpg | grep 534b59
+- Commands:
+  - strings steg1.jpg | grep SKY
+  - xxd steg1.jpg | grep 534b59
 
 
 #### Encoding and Decoding side challenge on linux only system:
 Goal of this challenge was to recognize that even though we can delete data on storage device, it can still exist until overwritten. Deleting a file removes its filesystem reference, but the underlying data may remain on disk until overwritten, which allows forensic tools like strings to recover readable data from raw devices.
 -Main commands used (no one on team had linux system and USB passthrough was unavailable in VM so I “created” a USB):
-  sudo mkfs.ext4 /dev/loop0
-  sudo mount /dev/loop0 /mnt/fakeusb
-  echo "LINDSEY_USB_TEST" | sudo tee /mnt/fakeusb/secret.txt
-  sudo rm /mnt/fakeusb/secret.txt
-  sudo umount /mnt/fakeusb
-  sudo strings /dev/loop0 | grep LINDSEY_USB_TEST
+  - sudo mkfs.ext4 /dev/loop0
+  - sudo mount /dev/loop0 /mnt/fakeusb
+  - echo "LINDSEY_USB_TEST" | sudo tee /mnt/fakeusb/secret.txt
+  - sudo rm /mnt/fakeusb/secret.txt
+  - sudo umount /mnt/fakeusb
+  - sudo strings /dev/loop0 | grep LINDSEY_USB_TEST
 
 
 **AI Assistance Disclosure:**
