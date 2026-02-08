@@ -5,7 +5,6 @@ Rapid Tables (Hex to String | Hex to ASCII Converter) is a quicker method for de
 ### **Questions:**
 
 **Q1: 0x73636f7270696f6e**
-
 This text is encoded in hexadecimal. This text can be converted to ASCII by hand or by using an online tool such as RapidTables or CyberChef.
 💡
 Note: The 0x is used to indicate that the value is hexadecimal and should not be converted.
@@ -13,7 +12,6 @@ Note: The 0x is used to indicate that the value is hexadecimal and should not be
 *A: scorpion*
 
 **Q2: c2NyaWJibGU=.**
-
 This text is encoded in base64. You can identify this by analyzing the range of characters used in the message and recognizing that it falls within the range for base64 (A-Z, a-z, 0-9, +, /, and =). This text can be converted to ASCII by hand or by using an online tool such as Base64Decode or CyberChef.
 
 
@@ -23,7 +21,6 @@ This text is encoded in base64. You can identify this by analyzing the range of 
   - Scribble is the output.
 
 **Q3: 01110011 01100101 01100011 01110101 01110010 01100101 01101100 01111001.**
-
 This text is encoded in binary. You can identify this by analyzing the range of characters used in the message and recognizing that it falls within the range for binary (0 and 1). This text can be converted to ASCII by hand or by using an online tool such as Binary Hex Converter or CyberChef.
 
 *A: securely* 
@@ -32,7 +29,6 @@ This text is encoded in binary. You can identify this by analyzing the range of 
   - while read -r b; do printf "\\$(printf '%03o' $((2#$b)))"; done
 
 **Q4: 01100010 01000111 00111001 01110011 01100010 01000111 01101100 01110111 01100010 00110011 01000001 00111101.**
-
 This text is doubly encoded - first with base64 and then with binary. To revere the process, the message has to be converted from binary to ASCII, then base64 to ASCII. You can use the Binary Hex Converter followed by Base64Decode. It’s possible to combine these two steps using CyberChef.
 
 *A: From binary to ASCII, it is bG9sbGlwb3A=.*
@@ -40,7 +36,8 @@ This text is doubly encoded - first with base64 and then with binary. To revere 
 
 
 ## Strings Gym 
-*A: FLAG = SKY-TVJI-2063*
+*A: FLAG = SKY-TVJI-2063.*
+
 Using the strings command, I was able to extract the hidden flag (SKY-TVJI-2063) from steg1.jpg and verify it by viewing the image in hexadecimal using xxd (the same method used in Vim with :%!xxd) and searching the hex dump for the ASCII string.
 - Commands:
   - strings steg1.jpg | grep SKY
