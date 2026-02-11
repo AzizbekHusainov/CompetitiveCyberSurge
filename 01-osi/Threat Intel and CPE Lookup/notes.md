@@ -44,27 +44,26 @@
 
 # What is the CVE of the original POODLE attack?
 
-##
+## CVE-2014-3566
 
 # What version of VSFTPD contained the smiley face backdoor
 
-##
+## vsftpd version 2.3.4 
 
-# What was the first 1.0.1 version of OpenSSL that described Telnet?
+# What was the first 1.0.1 version of OpenSSL that was NOT vulnerable to heartbleed?
 
-##
+## 1.0.1g
 
 # What was the original RFC number that described Telnet?
 
-##
+## RFC 854
 
 # How large (in bytres) was the SQL Slammer worm?
 
-##
+## 376 bytes
 
 # Samy is my...
 
-
-##
+## hero
 
 
