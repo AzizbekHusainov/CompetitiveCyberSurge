@@ -21,3 +21,14 @@ We will be using sqlite3 for data query provided in Cyber Skyline terminal. To u
 5. Command: `select url from moz_places;` Scroll and look for blockchain.info/search/. Answer: `5274cfba585a4b5681527a37f95c76340428916bb7480cef6c545f0a28dcd2d7`
 6. Look through urls from moz_places using command `select url from moz_places;` Then scroll until you see `https://blockchain.info/tx/5274cfba585a4b5681527a37f95c76340428916bb7480cef6c545f0a28dcd2d7?show_adv=true`. This url was obtained by smart trial and error. After clicking on the link and scrolling down you will find the answer of `0.22616302 BTC`
 7. Use the same url from question 6 and locate the answer of `18z6bTFjxkXCmhfp8YBetR2wgmoVjXGJZz`
+
+### Squid
+
+1. Command: `head squid_access.log` grab the first field containing a decimal number and run `date -d @thatnumber` this will give you the saved time. Answer: `2010`
+2. Command: `cat squid_access.log | awk 'print $2' | sort -n` then grab the first number for the fastest time. Answer: `5`
+3. Same command as problem 2 but grab the last number Answer: `41762`
+4. Command: `cat squid_access.log | awk '{print$3}' | sort | uniq | wc -l` Answer: `4`
+5. Command: `cat squid_access.log | grep GET | wc -l` Answer: `35`
+6. Run same command as question 5 but grep for POST. Answer: `78` 
+7. Run command `cat squid_access.log | grep 192.168.0.224` Answer: `Symantecliveupdate`
+8. Run same command as question 7. Answer: `http://liveupdate.symantecliveupdate.com/streaming/norton$202009$20streaming$20virus$20definitions_1.0_symalllanguages_livetri.zip`
