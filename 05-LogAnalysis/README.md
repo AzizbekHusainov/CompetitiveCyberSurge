@@ -25,7 +25,7 @@ We will be using sqlite3 for data query provided in Cyber Skyline terminal. To u
 ### Squid
 
 1. Command: `head squid_access.log` grab the first field containing a decimal number and run `date -d @thatnumber` this will give you the saved time. Answer: `2010`
-2. Command: `cat squid_access.log | awk 'print $2' | sort -n` then grab the first number for the fastest time. Answer: `5`
+2. Command: `cat squid_access.log | awk '{print $2}' | sort -n` then grab the first number for the fastest time. Answer: `5`
 3. Same command as problem 2 but grab the last number Answer: `41762`
 4. Command: `cat squid_access.log | awk '{print$3}' | sort | uniq | wc -l` Answer: `4`
 5. Command: `cat squid_access.log | grep GET | wc -l` Answer: `35`
