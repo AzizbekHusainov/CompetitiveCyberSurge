@@ -74,3 +74,18 @@ e.g
 - MX Record : Mail Exchange record defines which mail servers are responsible for recieving emails for a domain
 
 - TXT Record : Stores text based information, commonly used for verifying domain ownership and used to implement email security protocls
+
+# DNS - cyberskyline challenge
+
+## What is the type of the DNS query requested?
+- found in packet 4, under Domain Name System, under Queries
+## What domain was requested?
+- found in packet 4, under Domain Name System, under Queries, it will end in a '.net' or somethign similar
+## How many items were in the response?
+Number of Answers under Query
+## What is the TTL for all of the DNS records?
+TTL is under Class:
+##  What is the IP address for the "welcome" subdomain?
+listed next to addr
+
+
