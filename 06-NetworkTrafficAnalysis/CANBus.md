@@ -20,6 +20,6 @@
 10. In a new cell run the function `=MAX(L:L)` to obtain the highest speed. Note that the characters inside the function change in respect to which column contains the data of interest.
 
 # Answers
-1. 38
+1. 36
 2. 352
 3. 20.13
