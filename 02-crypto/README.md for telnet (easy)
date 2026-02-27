@@ -1,0 +1,46 @@
+Notes on telnet:
+Telnet is a network protocol used to remotely access another computer over a network.
+It allows users to control a remote machine through a command-line interface.
+Developed in 1969, making it one of the oldest Internet protocols still known today.
+
+How Telnet Works
+Uses a client-server model:
+Telnet client → connects
+Telnet server → accepts remote login
+
+Default communication happens over TCP Port 23.
+Sends keyboard input to the remote system and displays output back to the user.
+Major Security Fact (VERY IMPORTANT)
+Telnet is NOT encrypted
+
+This means:
+Usernames are sent in plain text
+Passwords are sent in plain text
+Commands are visible in network captures
+
+
+How is the assignment done:
+
+The same way as the HTTP is done
+load up wireshark, and look for answers or what your looking for.
+Go to the filter tab and filter for telnet, click a random one right click 
+hover over follow and click the only option avaible.
+Q/A
+
+1. What is the username that was used to log in?
+A: ttestt
+
+2. What is the password that was used to log in?
+A: capture
+
+3. What command was executed once the user was authenticated?
+A: uname -a
+
+4. In what year was this capture created?
+A: 2011
+
+5. What is the hostname of the machine that was logged in to?
+A: tteesstt or --aa
+
+6. What CPU architecture does the remote machine use?
+A: armv4tl
