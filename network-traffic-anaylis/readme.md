@@ -1,46 +1,26 @@
-Notes on telnet:
-Telnet is a network protocol used to remotely access another computer over a network.
-It allows users to control a remote machine through a command-line interface.
-Developed in 1969, making it one of the oldest Internet protocols still known today.
+This is a file over HHTP and How I did it also some info on HHTP.
 
-How Telnet Works
-Uses a client-server model:
-Telnet client → connects
-Telnet server → accepts remote login
+HTTP (HyperText Transfer Protocol) is the communication protocol used for transferring web data between a client (your browser or tool) and a server (website).
 
-Default communication happens over TCP Port 23.
-Sends keyboard input to the remote system and displays output back to the user.
-Major Security Fact (VERY IMPORTANT)
-Telnet is NOT encrypted
+In terms to understand easier: HTTP is the language your computer uses to talk to websites.
 
-This means:
-Usernames are sent in plain text
-Passwords are sent in plain text
-Commands are visible in network captures
+Ubuntu install wireshark. Install wireshark onto your terminal unbutnu, vm wherever you may have ubuntu installed and you done have to use ubuntu you can use any sort of linux sortware as long as you have access to install wireshark.
 
+What Linux tool was used to execute a file download? Answer: wget
 
-How is the assignment done:
+What is the name of the web server software that handled the request? Answer: ngnix
 
-The same way as the HTTP is done
-load up wireshark, and look for answers or what your looking for.
-Go to the filter tab and filter for telnet, click a random one right click 
-hover over follow and click the only option avaible.
-Q/A
+What IP address initiated request? Answer: 192.168.1.140
 
-1. What is the username that was used to log in?
-A: ttestt
+What is the IP address of the server? Answer: 174.143.213.184
 
-2. What is the password that was used to log in?
-A: capture
+What is the md5sum of the file downloaded? Answer: 966007c476e0c200fba8b28b250a6379
 
-3. What command was executed once the user was authenticated?
-A: uname -a
+Steps to question 5 because I got stuck on it (because I am a noob) lol
 
-4. In what year was this capture created?
-A: 2011
-
-5. What is the hostname of the machine that was logged in to?
-A: tteesstt or --aa
-
-6. What CPU architecture does the remote machine use?
-A: armv4tl
+extract the logo.png in wireshark.
+To do so go to file then export objects then http
+save it in whatever folder you were working on
+go to linux
+look for that file and type in the command md5sum logo.png ( or whatever you named that file )
+Then you will get the md5 file name (boom)
