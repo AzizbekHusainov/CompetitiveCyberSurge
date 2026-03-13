@@ -355,3 +355,10 @@ Most NCL networking challenges follow this process:
 3.  Connect with Ncat
 4.  Send commands
 5.  Extract the flag
+
+### NMAP NCL GYM ANSWERS
+1. 7
+2. 13
+3. 37
+4. 7
+5. nginx
