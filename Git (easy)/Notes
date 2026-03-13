@@ -1,1 +1,206 @@
+Git Basics & Commands (README Notes)
+What is Git
+
+Git is a distributed version control system used to track changes in files and collaborate on projects. It allows developers to save versions of their work, revert to previous versions, and work with others without overwriting each other’s changes.
+
+Git stores project history using commits, which are snapshots of the project at specific points in time.
+
+Important Git Definitions
+Repository (Repo)
+
+A repository is a folder that Git tracks. It contains project files and a hidden .git directory where Git stores version history.
+
+Example:
+
+my-project/
+ ├── index.html
+ ├── script.js
+ └── .git/
+Commit
+
+A commit is a saved snapshot of the project. Each commit records changes and includes a message describing what was modified.
+
+Example commit message:
+
+Added login page and fixed navigation bug
+Branch
+
+A branch is a separate version of the project where changes can be made without affecting the main version.
+
+The default branch is usually called main or master.
+
+Example:
+
+main
+feature-login
+bug-fix-navbar
+Clone
+
+Cloning downloads a copy of a remote repository to your local computer.
+
+Example command:
+
+git clone https://github.com/user/project.git
+Push
+
+Push uploads local commits to a remote repository.
+
+Example:
+
+git push origin main
+Pull
+
+Pull downloads updates from the remote repository and merges them with your local version.
+
+Example:
+
+git pull origin main
+Merge
+
+A merge combines changes from one branch into another branch.
+
+Example:
+
+feature-login → main
+Basic Git Workflow
+
+A typical Git workflow looks like this:
+
+Edit files
+↓
+git add
+↓
+git commit
+↓
+git push
+Common Git Commands
+Initialize a Repository
+
+Creates a new Git repository in the current folder.
+
+git init
+Clone a Repository
+
+Downloads a repository from a remote server.
+
+git clone https://github.com/user/repo.git
+Check Repository Status
+
+Shows which files are modified or staged.
+
+git status
+Add Files to Staging Area
+
+Stages files so they can be committed.
+
+Add one file:
+
+git add filename.txt
+
+Add all files:
+
+git add .
+Commit Changes
+
+Saves staged changes to the Git history.
+
+git commit -m "Added new feature"
+View Commit History
+
+Shows all commits in the repository.
+
+git log
+
+Short version:
+
+git log --oneline
+Create a Branch
+
+Creates a new branch.
+
+git branch feature-branch
+Switch Branches
+
+Move to a different branch.
+
+git checkout feature-branch
+
+or newer command:
+
+git switch feature-branch
+Merge Branches
+
+Combine another branch into the current branch.
+
+git merge feature-branch
+Push Changes
+
+Uploads commits to the remote repository.
+
+git push origin main
+Pull Updates
+
+Downloads the newest changes from the remote repository.
+
+git pull origin main
+Git in Cybersecurity / Forensics
+
+In cybersecurity competitions, Git can be analyzed to recover hidden information such as:
+
+deleted files
+
+hidden flags
+
+previous versions of code
+
+commit messages
+
+old branches
+
+Useful commands for investigation:
+
+git log
+git log -p
+git show <commit>
+git diff
+git fsck
+
+These commands help investigators see historical changes in a repository.
+
+Summary
+Git is a powerful tool that allows developers to:
+track changes in files
+collaborate with others
+manage different versions of a project
+recover older versions of code
+Understanding Git commands and repository structure is important for both software development and cybersecurity analysis.
+If you want, I can also give you a shorter “student style” README version professors prefer (about 1 page) that looks less AI-written and more natural for class submissions.
+
+
+
+Questions and answers:
+
+1. What is the display name of the author of this git project??
+A: Cyber Cyber
+
+2. What is the short commit hash (first 8 characters) of the initial commit?
+A: f9714edd
+
+3. What is flag #1?
+A: SKY-HSNO-2303
+
+4. What is flag #2?
+A: I couldnt find flag 2 
+
+5. What is flag #3
+A: +SKY-CCXL-4067
+
+6. What is flag #3?
+A: 
+
+7. What is flag #4?
+A: +SKY-IRRK-9672
+
+8. What is flag #5?
+A: SKY-DKIT-9801
 
