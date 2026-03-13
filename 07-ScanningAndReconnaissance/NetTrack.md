@@ -1,7 +1,5 @@
 # NETTRACK
 
-# Netcat (nc) — Net Track Challenge Notes
-
 ---
 
 ## Who, What, When, Where, Why
