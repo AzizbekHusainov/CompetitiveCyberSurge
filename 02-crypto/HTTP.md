@@ -1,4 +1,4 @@
-This is a file over HHTP and How I did it also some info on HHTP.
+This is a file over HTTP and How I did it also some info on HTTP.
 
 HTTP (HyperText Transfer Protocol) is the communication protocol used for transferring
 web data between a client (your browser or tool) and a server (website).
