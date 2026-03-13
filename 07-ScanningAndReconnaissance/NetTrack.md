@@ -188,7 +188,7 @@ get flag.txt   # <-- flag will be in one of these
 ## Cyber Gym Challenges
 
 1. What is the name and version of the software?
-Run this command `nc net-track.services.cityinthe.cloud 8080` to connect the host,  then type in help to see list of available commands (User version command)  Answer --  Radicalshell v9
+Run this command `nc net-track.services.cityinthe.cloud 8080` to connect the host,  then type in help to see list of available commands (User version command)  `Answer --  Radicalshell v9`
 -----
 2. What is the flag?
 Make sure you are connected to the host. Use the list command to list files and then get each file to find the file containing information regarding the flag. (The file to get is secret). `Answer -- SKY-NCAT-3071`
